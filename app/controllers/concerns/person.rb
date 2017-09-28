@@ -13,13 +13,13 @@ class Person
 
   def birth_year
     # YOUR IMPLEMENTATION HERE
-    a = time.new.year - @age
+    a = 2017 - @age.to_i
     a
   end
 
   def introduction
     # YOUR IMPLEMENTATION HERE
-    'delete_me'
+    "Hello #{@name} you are #{@age}"
   end
 
 end

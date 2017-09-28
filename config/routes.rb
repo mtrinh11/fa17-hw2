@@ -3,7 +3,7 @@ Rails.application.routes.draw do
  
   root 'pages#home'
   get 'age', to: 'pages#age'
-
-  get '/', to: 'pages_controller#stringify', as: 'stringify'
+  post '/', to: 'pages#stringify', as: 'stringify'
+  put '/age', to: 'pages#person', as: 'person'
 end
 

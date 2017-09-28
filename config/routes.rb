@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   get 'age', to: 'pages#age'
   post '/', to: 'pages#stringify', as: 'stringify'
   put '/age', to: 'pages#person', as: 'person'
+  get '/me', to: 'pages#say', as: 'say'  
+
 end
 
